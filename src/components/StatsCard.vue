@@ -18,7 +18,6 @@
         </slot>
       </div>
     </div>
-
     <p class="mt-3 mb-0 text-sm">
       <slot name="footer">
 
@@ -42,7 +41,7 @@
       icon: String,
       title: String,
       subTitle: String,
-      iconClasses: [String, Array]
+      iconClasses: [String, Array],
     }
   };
 </script>

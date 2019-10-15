@@ -11,9 +11,20 @@
       </div>
     </div>
 
+    <!-- BasePagination -->
+    <base-pagination
+      v-model="currentPage"
+      :pageCount="pageCount"
+      :perPage="perPage"
+      aria-controls="my-table"
+      class="px-3"
+      ></base-pagination>
+
     <div class="table-responsive">
       <base-table thead-classes="thead-light"
-                  :data="tableData">
+                  :data="dataPage"
+                  :per-page="perPage"
+                  :current-page="currentPage">
         <template slot="columns">
           <th>Staker</th>
           <th>Value</th>
@@ -54,7 +65,24 @@
 <script>
   export default {
     name: 'social-traffic-table',
-    props: ['tableData']
+    props: ['tableData'],
+    data() {
+      return {
+        perPage: 5,
+        currentPage: 1
+      }
+    },
+    computed: {
+      rows() {
+        return this.tableData.length
+      },
+      pageCount() {
+        return Math.ceil(this.tableData.length / this.perPage)
+      },
+      dataPage() {
+        return this.tableData.slice(this.perPage*(this.currentPage-1),this.perPage*(this.currentPage))
+      }
+    }
   }
 </script>
 <style>

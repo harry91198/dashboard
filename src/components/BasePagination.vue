@@ -137,4 +137,8 @@ export default {
 .page-link {
   cursor: pointer;
 }
+
+.page-item.active:hover {
+  color: white;
+}
 </style>

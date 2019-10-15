@@ -6,16 +6,52 @@
             <!-- <div class="row">
                 <div>Staker</div>
             </div> -->
-                <div class="col-xl-7 col-lg-6">
-                    <stats-card title="Staker"
+
+                <div class="row">
+                
+                    <div class="col-xl-3 col-lg-6">
+                        <stats-card title="Stake"
+                                    type="gradient-red"
+                                    :sub-title="String(stakeBalance)"
+                                    icon="ni ni-atom"
+                                    class="mb-4 mb-xl-0"
+                        >
+                        </stats-card>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <stats-card title="Eth"
+                                    type="gradient-orange"
+                                    :sub-title="String(ethBalance)"
+                                    icon="ni ni-chart-pie-35"
+                                    class="mb-4 mb-xl-0"
+                                    >
+                        </stats-card>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <stats-card title="Sch"
+                                    type="gradient-green"
+                                    :sub-title="String(schBalance)"
+                                    icon="ni ni-money-coins"
+                                    class="mb-2 mb-xl-0"
+                                    >
+                        </stats-card>
+                    </div>
+                    <!-- <stats-card title="Staker"
                                 type="gradient-red"
                                 :sub-title="address"
                                 icon="ni ni-atom"
                                 class="mb-4 mb-xl-0"
+                                ethTitle="ETH"
+                                schTitle="SCH"
+                                :ethAmount="ethBalance"
+                                :schAmount="schBalance"
                     >
 
- <!-- {{ $route.params.address }} -->
-                    </stats-card>
+{{ $route.params.address }}
+                    </stats-card> -->
+
+
+
                 </div>
 
                 <!-- <div class="col-xl-3 col-lg-6">
@@ -165,7 +201,10 @@
           totalStake:'',
           epoch:'',
           address: this.$route.params.address,
-
+          stakeBalance: 0,
+          ethBalance: 0,
+          schBalance: 0,
+          
         SocialTrafficTable: {
             tableData: []
         },
@@ -196,6 +235,14 @@
       };
     },
     methods: {
+      async getBalance() {
+          let data = await this.axios.get(url + 'getEthbalance/'+this.address)
+          let data1 = await this.axios.get(url + 'getSchbalance/'+this.address)
+          let data2 = await this.axios.get(url + 'getStake/' + this.address)
+          this.ethBalance = Math.round(Number(data.data.message)/1e16)/100
+          this.schBalance = Math.round(Number(data1.data.message)/1e16)/100
+          this.stakeBalance = Math.round(Number(data2.data.message)/1e16)/100
+    },
       async initBigChart() {
           let data = await this.axios.get(url+'stakerEvents/'+this.address)
 
@@ -303,6 +350,7 @@
     // }
 },
     mounted() {
+      this.getBalance();
       this.initBigChart();
       // this.initStakingTable();
       // this.initTables();

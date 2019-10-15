@@ -8,9 +8,8 @@
         <div :class="containerClasses">
             <slot name="brand">
                 <router-link :to="$route.path"
-                             class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block">
-                    {{$route.name}}
-                </router-link>
+                             class="h4 mb-0 text-white d-none d-lg-inline-block">
+                    {{`${$route.name.toUpperCase()}${$route.params.address ? ': ' + $route.params.address : ''} `}}                </router-link>
             </slot>
             <navbar-toggle-button v-if="showToggleButton"
                                   :toggled="toggled"
