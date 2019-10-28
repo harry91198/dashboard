@@ -8,7 +8,7 @@
             </div> -->
 
                 <div class="row">
-                
+
                     <div class="col-xl-3 col-lg-6">
                         <stats-card title="Stake"
                                     type="gradient-red"
@@ -204,7 +204,7 @@
           stakeBalance: 0,
           ethBalance: 0,
           schBalance: 0,
-          
+
         SocialTrafficTable: {
             tableData: []
         },
@@ -261,7 +261,9 @@
           datasets: [
             {
               label: 'Stake',
-              data: data2
+              data: data2,
+              cubicInterpolationMode: 'monotone'
+
             }
           ],
           labels: labels,

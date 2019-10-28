@@ -134,7 +134,9 @@ export default {
       let chartData = {
         datasets: [{
           label: 'Price',
-          data: data2
+          data: data2,
+          cubicInterpolationMode: 'monotone'
+
         }],
         labels: labels,
       };
