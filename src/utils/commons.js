@@ -5,11 +5,13 @@ var _ = require('lodash/object')
 // import BN from 'bignumber.js'
 let web3
 let accounts
-let networkid = 4
+let networkid = 420
 
 // let error
 // let ethereum
 export const EventBus = new Vue()
+
+export const url = 'http://localhost:3000/'
 
 export const enableEth = async () => {
   if (typeof window.ethereum === 'undefined'
@@ -84,8 +86,7 @@ export const get = async (data, selector) => {
   return _.get(data, selector)
 }
 
-// export const url = 'http://localhost:3000/'
-export const url = 'https://api.razor.network/'
+// export const url = 'https://api.razor.network/'
 
 // export const getContractAddress = (assetId) => {
 //   return CDPFactory.methods.contracts(assetId).call()

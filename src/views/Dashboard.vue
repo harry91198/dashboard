@@ -21,7 +21,7 @@
                     <stats-card title="Total Stakers"
                                 type="gradient-orange"
                                 :sub-title="numStakers"
-                                icon="ni ni-chart-pie-35"
+                                icon="fa fa-users "
                                 class="mb-4 mb-xl-0"
                     >
 
@@ -50,7 +50,7 @@
                     <stats-card title="Epoch"
                                 type="gradient-info"
                                 :sub-title="epoch"
-                                icon="ni ni-chart-bar-32"
+                                icon="fas fa-hourglass-end"
                                 class="mb-4 mb-xl-0"
                     >
 
@@ -246,8 +246,9 @@
             // console.log('weight', Number(data.data.message[i].weight))
             // totalStake+=Number(data.data.message[i].weight)
         }
-        // sorting by stake and filter whose stake value is 0 
-        this.SocialTrafficTable.tableData.sort((a, b) => b.stake - a.stake).splice(this.SocialTrafficTable.tableData.findIndex(item => item.stake === 0), this.SocialTrafficTable.tableData.length)
+        // sorting by stake and filter whose stake value is 0
+        this.SocialTrafficTable.tableData.sort((a, b) => b.stake - a.stake)
+        // .splice(this.SocialTrafficTable.tableData.findIndex(item => item.stake === 0), this.SocialTrafficTable.tableData.length)
         this.numStakers = String((data.data.message).length)
         this.totalStake = Math.round(Number(totalStake/1e16))/100
         let data2 = await this.axios.get(url+'voteEvents/1')

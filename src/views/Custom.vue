@@ -22,7 +22,7 @@
         <stats-card title="Total Stake" type="gradient-green" :sub-title="totalStake" icon="ni ni-money-coins" class="mb-4 mb-xl-0" />
       </div>
       <div class="col-xl-3 col-lg-6">
-        <stats-card title="Epoch" type="gradient-info" :sub-title="epoch" icon="ni ni-chart-bar-32" class="mb-4 mb-xl-0" />
+        <stats-card title="Epoch" type="gradient-info" :sub-title="epoch" icon="fas fa-hourglass-end" class="mb-4 mb-xl-0" />
       </div>
     </div>
   </base-header>

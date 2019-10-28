@@ -34324,11 +34324,11 @@
         }
       },
       "links": {
-        "Constants": "0x66BBF426cea25734502EdbAbEd281022C260e35e",
-        "Random": "0x8c56A5B3EE9C79B7dc2d88c966475Ed24f43b084"
+        "Constants": "0x8892fadBBc744bc8E68fA0Da3C22429b38E14B6b",
+        "Random": "0x3559D5B1BaBAF8F89472fB64bb5D9352A9D45247"
       },
-      "address": "0xd37a127c2Ea24c85F6e96A29E83d294eA66980de",
-      "transactionHash": "0x12c2f02dd064d8141720d3a2bb99cb3053969a4c2d4d78092834ec500919ef33"
+      "address": "0xaeB8C192D293C1fa74cfd6374b97faD38CFABA79",
+      "transactionHash": "0x551fcaa3aebab9cb6517365c98c54b37ab9dcaa576b6d2d20e6fcd2de020133f"
     },
     "5": {
       "events": {
@@ -34426,14 +34426,110 @@
           "name": "DebugUint256",
           "type": "event",
           "signature": "0x43d4b4706539f9e22baf8767ebea21ad24f723f14b6981664ac4d0af596dddbe"
+        },
+        "0xee036cc96c88163f353feaa4d497e88baaebeb631f40ad9b8a6d51bb6fad4076": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "jobIds",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "medians",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "lowerCutoffs",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "higherCutoffs",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "iteration",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "biggestStakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "Proposed",
+          "type": "event",
+          "signature": "0xee036cc96c88163f353feaa4d497e88baaebeb631f40ad9b8a6d51bb6fad4076"
+        },
+        "0x5ef264ae9101b91bd7117350c5e85901297fa0569e7a3e07eb7ec0a6281529f0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "medians",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "lowerCutoffs",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "higherCutoffs",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "jobIds",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "BlockConfirmed",
+          "type": "event",
+          "signature": "0x5ef264ae9101b91bd7117350c5e85901297fa0569e7a3e07eb7ec0a6281529f0"
         }
       },
       "links": {
-        "Constants": "0x119Cb9c643CDC09d139b5912Ea99AA20C9d3e51D",
-        "Random": "0x61f682353E404a3F1C1987493Fd8d475C66c827B"
+        "Constants": "0x7CF5FCd980ED4A4523553b5B4d228eD7Dec416A2",
+        "Random": "0x8D3c73943b5ec3b64aeA43CD197F4214b0E70C38"
       },
-      "address": "0x6823C94B4f0Bf090e8c61Db788913894D669d1A6",
-      "transactionHash": "0x5c651711174c87815967aa24436ab8393e146e0e9aab6996c16b82fc6e34cdcd"
+      "address": "0x02A964151eB83661302629AfE6c879195b42b335",
+      "transactionHash": "0x9ec5231e140fcabdb09bacbce1c54cdfad87a79afae14be158cae51bbfc92b6b"
     },
     "420": {
       "events": {
@@ -34757,7 +34853,7 @@
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-12T11:21:06.257Z",
+  "updatedAt": "2019-10-28T04:58:43.633Z",
   "devdoc": {
     "methods": {}
   },

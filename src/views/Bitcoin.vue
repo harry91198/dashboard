@@ -21,7 +21,7 @@
                     <stats-card title="Total Stakers"
                                 type="gradient-orange"
                                 :sub-title="numStakers"
-                                icon="ni ni-chart-pie-35"
+                                icon="fa fa-users "
                                 class="mb-4 mb-xl-0"
                     >
 
@@ -34,7 +34,7 @@
                 <div class="col-xl-3 col-lg-6">
                     <stats-card title="Total Stake"
                                 type="gradient-green"
-                                :sub-title="String(numStakers)"
+                                :sub-title="String(totalStake)"
                                 icon="ni ni-money-coins"
                                 class="mb-4 mb-xl-0"
                     >
@@ -50,7 +50,7 @@
                     <stats-card title="Epoch"
                                 type="gradient-info"
                                 :sub-title="epoch"
-                                icon="ni ni-chart-bar-32"
+                                icon="fas fa-hourglass-end"
                                 class="mb-4 mb-xl-0"
                     >
 
@@ -254,7 +254,7 @@
             // console.log('weight', Number(data.data.message[i].weight))
             // totalStake+=Number(data.data.message[i].weight)
         }
-        // sorting by stake and filter whose stake value is 0 
+        // sorting by stake and filter whose stake value is 0
         this.SocialTrafficTable.tableData.sort((a, b) => b.stake - a.stake).splice(this.SocialTrafficTable.tableData.findIndex(item => item.stake === 0), this.SocialTrafficTable.tableData.length)
 
         this.numStakers = String((data.data.message).length)

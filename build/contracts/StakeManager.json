@@ -37732,10 +37732,10 @@
         }
       },
       "links": {
-        "Constants": "0x66BBF426cea25734502EdbAbEd281022C260e35e"
+        "Constants": "0x8892fadBBc744bc8E68fA0Da3C22429b38E14B6b"
       },
-      "address": "0x23dE70aD23ec601E1ecCA180dc268900Dcd43D8D",
-      "transactionHash": "0x857e9bfc42cfdc68841413f917a1a72e16d7d2754c72a4e0a5c909494cc80409"
+      "address": "0xf0D4EC9eEEAc62E85Ce5e8887eB6B9F162B77285",
+      "transactionHash": "0xa60e41875cfcad2f71816ad976fb45ab18cebf49b63fe2e0cccde08e18887e34"
     },
     "5": {
       "events": {
@@ -37826,13 +37826,206 @@
           "name": "DebugUint256",
           "type": "event",
           "signature": "0x43d4b4706539f9e22baf8767ebea21ad24f723f14b6981664ac4d0af596dddbe"
+        },
+        "0xab9982d99de79485b3cd6d1e72c881fd0342f42f1cbc7d220d4f373b97c4f363": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "previousStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "newStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "reason",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "StakeChange",
+          "type": "event",
+          "signature": "0xab9982d99de79485b3cd6d1e72c881fd0342f42f1cbc7d220d4f373b97c4f363"
+        },
+        "0xf7157643fd549e213a0105625da6b3bf58c86068ccb954a4449e18bf9427bff4": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "prevRewardPool",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "rewardPool",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "RewardPoolChange",
+          "type": "event",
+          "signature": "0xf7157643fd549e213a0105625da6b3bf58c86068ccb954a4449e18bf9427bff4"
+        },
+        "0xeee26d3c1e406e24904d3748e49da85096c92ac1a6ad38f3fe8a404f85212dd1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "prevStakeGettingReward",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "stakeGettingReward",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "StakeGettingRewardChange",
+          "type": "event",
+          "signature": "0xeee26d3c1e406e24904d3748e49da85096c92ac1a6ad38f3fe8a404f85212dd1"
+        },
+        "0x52d3b6bf695a499d39fcdb47e3b450c09f2f6aa091ca8809cc51c00e705996cc": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "previousStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "newStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "Staked",
+          "type": "event",
+          "signature": "0x52d3b6bf695a499d39fcdb47e3b450c09f2f6aa091ca8809cc51c00e705996cc"
+        },
+        "0x0cfbc484edc798d2584502ca0d64e7e9514b8dd091d96a2a5b4deb58478da19e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "newStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "Unstaked",
+          "type": "event",
+          "signature": "0x0cfbc484edc798d2584502ca0d64e7e9514b8dd091d96a2a5b4deb58478da19e"
+        },
+        "0x0a6fecee2c95fc6b4c7f291e3435a3a832bcd700c2a7ffdedd8c909d56dfa49f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "stakerId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "newStake",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "Withdrew",
+          "type": "event",
+          "signature": "0x0a6fecee2c95fc6b4c7f291e3435a3a832bcd700c2a7ffdedd8c909d56dfa49f"
         }
       },
       "links": {
-        "Constants": "0x119Cb9c643CDC09d139b5912Ea99AA20C9d3e51D"
+        "Constants": "0x7CF5FCd980ED4A4523553b5B4d228eD7Dec416A2"
       },
-      "address": "0xB3116749045564E4b19410cB49c277fF5bE5918F",
-      "transactionHash": "0x153275969175b9446bbacb759900ef759add8b8df0796c93519a9ad7ee73c7bf"
+      "address": "0xcDDF07c91A6Fb2ca2E09FEc05778091993bFcD75",
+      "transactionHash": "0x297e9a2c6083b9d91d035bf097992480c7cfd07141db08a89099edaf1fba5010"
     },
     "420": {
       "events": {
@@ -38376,7 +38569,7 @@
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-12T11:21:06.281Z",
+  "updatedAt": "2019-10-28T04:58:43.653Z",
   "devdoc": {
     "methods": {
       "calculateInactivityPenalties(uint256,uint256)": {

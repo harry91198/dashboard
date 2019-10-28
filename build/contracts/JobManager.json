@@ -6529,8 +6529,147 @@
         }
       },
       "links": {},
-      "address": "0x65b989fecDbaA90F57A1Ca4eBFfeBBaD06abe784",
-      "transactionHash": "0xd33720c99598116ac9f6d71d2656cf92c834f361023c03059b3db4bba695d7c7"
+      "address": "0x8FdC5A7E8Db7e4BC8129B8BE020c7AbE71BCFc56",
+      "transactionHash": "0xce070f1236b7edc11d26572d014c07d29739d6d9a3188a95ae735d98288d06f4"
+    },
+    "5": {
+      "events": {
+        "0xb59e70a4b81df655f645ba254df330f6b7b73ee591d3efe59c87acf4fec21bbe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "selector",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "repeat",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "credit",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "JobCreated",
+          "type": "event",
+          "signature": "0xb59e70a4b81df655f645ba254df330f6b7b73ee591d3efe59c87acf4fec21bbe"
+        },
+        "0x445b511765f4a3a4e2341247fec72f6a760afc23b83c59fa5572ae81df3939c8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "selector",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "repeat",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "credit",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "fulfilled",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "JobReported",
+          "type": "event",
+          "signature": "0x445b511765f4a3a4e2341247fec72f6a760afc23b83c59fa5572ae81df3939c8"
+        },
+        "0x6ff3aa2ea7b53070f6d9d07a445d338d89e8edef44250ffa8be19f53910d4a2e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WriterAdded",
+          "type": "event",
+          "signature": "0x6ff3aa2ea7b53070f6d9d07a445d338d89e8edef44250ffa8be19f53910d4a2e"
+        },
+        "0x86e5bbceda94081c32220d685f37cc4e3ea7bb0be2dfbf0cb703579505a5390e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "WriterRemoved",
+          "type": "event",
+          "signature": "0x86e5bbceda94081c32220d685f37cc4e3ea7bb0be2dfbf0cb703579505a5390e"
+        }
+      },
+      "links": {},
+      "address": "0xE5Be3E386dFaaA7129256e80169FB5D198571199",
+      "transactionHash": "0x3c6747d61a60611269a98b9a8e22b9337a904de559b029239f3dbeb1d33d7d87"
     },
     "420": {
       "events": {
@@ -6966,7 +7105,7 @@
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-12T11:21:06.310Z",
+  "updatedAt": "2019-10-28T04:58:43.681Z",
   "devdoc": {
     "methods": {}
   },

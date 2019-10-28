@@ -136,10 +136,10 @@
                 <!-- <form  @submit="formSubmit"> -->
                     <h1>Schell Faucet</h1>
 <p class = "description">
-                    <b>Note: Use Ethereum compatible browser and set network to Rinkeby. Make sure you have some eth for tx. </b> </p>
-                    <p class = "description">1. Get some Rinkeby Ether from <a target ="_blank" href="https://faucet.rinkeby.io/">here</a></p>
+                    <b>Note: Use Ethereum compatible browser and set network to Görli. Make sure you have some eth for tx. </b> </p>
+                    <p class = "description">1. Get some Görli Ether from <a target ="_blank" href="https://faucet.goerli.mudit.blog/">here</a></p>
                     <p class = "description">2. Enter your address and click the button below </p>
-                    <p class = "description">3. 1000 Rinkeby SCH will be given once per address</p>
+                    <p class = "description">3. 1000 Görli SCH will be given once per address</p>
                     <div class="form-group">
 
                     <input  v-model = "address" placeholder="0xdeadbeef" class="form-control" />
