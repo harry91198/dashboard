@@ -247,8 +247,11 @@ import { enableEth, createJob, get } from '@/utils/commons'
       },
          async testQuery () {
              try {
-                 this.datumText = ''
-           let response = await this.axios.get(this.url)
+         this.datumText = ''
+           let url = this.url.replace(/(^\w+:|^)\/\//, '')
+           url = 'https://razorscan.io/cors-proxy/' + url
+           console.log('querying', url)
+           let response = await this.axios.get(url)
            // console.log(response)
            this.datum = await get(response.data, this.selector)
             this.datumText = 'Result of the query:'+ String(this.datum)

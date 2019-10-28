@@ -5,7 +5,7 @@ var _ = require('lodash/object')
 // import BN from 'bignumber.js'
 let web3
 let accounts
-let networkid = 420
+let networkid = 5
 
 // let error
 // let ethereum
