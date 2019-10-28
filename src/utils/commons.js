@@ -11,7 +11,8 @@ let networkid = 420
 // let ethereum
 export const EventBus = new Vue()
 
-export const url = 'http://localhost:3000/'
+// export const url = 'http://localhost:3000/'
+export const url = 'https://api.razor.network/'
 
 export const enableEth = async () => {
   if (typeof window.ethereum === 'undefined'
@@ -85,8 +86,6 @@ export const getSchBalance = async (address) => {
 export const get = async (data, selector) => {
   return _.get(data, selector)
 }
-
-// export const url = 'https://api.razor.network/'
 
 // export const getContractAddress = (assetId) => {
 //   return CDPFactory.methods.contracts(assetId).call()
