@@ -216,7 +216,7 @@
         let data2 = []
         let labels = []
         for(let i = 0; i < Object.keys(data.data).length; i++) {
-            data2.push((data.data[i].value/100))
+            data2.push((data.data[i].value/1000000))
             labels.push(this.moment.unix(Number(data.data[i].timestamp)).format('DD-MMM HH:mm'))
         }
         this.lastDataPoint = String(data2[data2.length-1])
