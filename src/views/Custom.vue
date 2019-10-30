@@ -6,7 +6,7 @@
         <h1 style="color:white">Datafeed</h1>
         <select v-model="selected" @change="init(selected)" class="form-control">
           <option disabled selected :value="null">Select a datafeed</option>
-          <option v-for="job in jobs" :value="job.id" :key="job.id">{{ job.url }}</option>
+          <option v-for="job in jobs" :value="job.id" :key="job.id">{{ job.name }}</option>
         </select>
       </div>
     </div>
@@ -111,7 +111,8 @@ export default {
       for (let i = 0; i < data.data.message.length; i++) {
         this.jobs.push({
           'url': data.data.message[i].url,
-          'id': data.data.message[i].id
+          'id': data.data.message[i].id,
+          'name': data.data.message[i].name
         })
       }
       // console.log(this.jobs)

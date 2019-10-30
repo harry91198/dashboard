@@ -28,7 +28,7 @@ export const enableEth = async () => {
   }
 }
 // const _1e18 = new web3.utils.BN('1000000000000000000')
-export const createJob = async (url, selector, repeat, eth) => {
+export const createJob = async (url, selector, name, repeat, eth) => {
   let jobManagerBuild = require('../../build/contracts/JobManager.json')
   // let delegatorBuild = require('../../build/contracts/Delegator.json')
 
@@ -39,7 +39,7 @@ export const createJob = async (url, selector, repeat, eth) => {
   accounts = await ethereum.enable()
 
   // console.log(accounts)
-  const res = await jobManager.methods.createJob(url, selector, repeat).send({
+  const res = await jobManager.methods.createJob(url, selector, name, repeat).send({
     from: accounts[0],
     value: eth
   })

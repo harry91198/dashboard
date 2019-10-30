@@ -34,6 +34,7 @@
           <th>Creator</th>
           <th>Age</th>
           <th>Action</th>
+          <th>Name</th>
           <th>URL</th>
           <th>Selector</th>
           <th>Repeat</th>
@@ -58,6 +59,9 @@
           </td>
           <td  style=" vertical-align: middle;">
               <span class="badge badge-primary">{{row.action}} </span>
+          </td>
+          <td  style=" vertical-align: middle;">
+            {{row.name}}
           </td>
           <td  style=" vertical-align: middle;">
             {{row.url}}

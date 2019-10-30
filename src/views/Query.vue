@@ -148,8 +148,10 @@
                     <input  v-model = "url" placeholder="JSON URL" class="form-control" />
 </div>
 <div class="form-group">
-
                     <input  v-model= "selector" placeholder="JSON selector" class="form-control" />
+                </div>
+<div class="form-group">
+                    <input  v-model= "name" placeholder="Name" class="form-control" />
                 </div>
                 <div class="form-group">
 
@@ -203,6 +205,7 @@ import { enableEth, createJob, get } from '@/utils/commons'
           error:null,
           url: null,
           selector: null,
+          name: null,
           eth: 1,
           account: null,
           repeat: true,
@@ -242,7 +245,7 @@ import { enableEth, createJob, get } from '@/utils/commons'
     methods: {
          async createJob () {
           let res  = await enableEth()
-          if (res) await createJob(this.url, this.selector, this.repeat, this.eth)
+          if (res) await createJob(this.url, this.selector, this.name, this.repeat, this.eth)
           // this.refresh()
       },
          async testQuery () {

@@ -262,6 +262,7 @@
                 epoch: data.epoch,
                 id: data.id,
                 action: data.action,
+                name: data.name,
                 url: data.url,
                 selector: data.selector,
                 repeat: data.repeat,
