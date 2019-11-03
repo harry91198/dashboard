@@ -15,8 +15,8 @@
         />
 
          <sidebar-item :link="{name: 'Bitcoin', icon: 'fab fa-bitcoin  text-orange', path: '/bitcoin'}"/>
-         <sidebar-item :link="{name: 'Explorer Custom Queries', icon: 'fas fa-binoculars text-primary', path: '/custom'}"/>
-        <sidebar-item :link="{name: 'Custom Query', icon: 'fas fa-search text-primary', path: '/query'}"/>
+         <sidebar-item :link="{name: 'Explorer Datafeeds', icon: 'fas fa-binoculars text-primary', path: '/custom'}"/>
+        <sidebar-item :link="{name: 'Add Datafeed', icon: 'fas fa-search text-primary', path: '/query'}"/>
         <sidebar-item :link="{name: 'Faucet', icon: 'fas fa-shower text-primary', path: '/faucet'}"/>
         <sidebar-item :link="{name: 'Explore Transactions', icon: 'fas fa-chart-bar text-primary', path: '/stats'}"/>
         <!-- <sidebar-item :link="{name: 'Help', icon: 'fa fas-telegram', path: 'https://t.me/razornetwork'}"/> -->

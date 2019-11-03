@@ -135,7 +135,7 @@
 
                     <!-- (url, selector, repeat, eth, account) -->
                 <!-- <form  @submit="formSubmit"> -->
-                    <h1>Create Custom Query</h1>
+                    <h1>Add datafeed</h1>
 
                     <p class = "description"> <b>Note: Use ethereum compatible browser and set network to Görli. Make sure you have some ether to pay the transaction fees.</b></p>
                 <p class = "description">Example: Use the following URL to fetch price of US stocks from NASDAQ. Substitute AAPL with symbol of any stock.</p>
@@ -160,7 +160,7 @@
                     <div class = 'row'><div class="btn btn-primary" @click = "testQuery"> Test Query </div> </div>
 
                     <div class = 'row' ><p class = "description"> {{datumText}}</p> </div>
-                    <div class= 'row' ><div class="btn btn-primary" @click = "createJob"> Submit </div> </div>
+                    <div class= 'row' ><div class="btn btn-primary" @click = "createJob" :class="{disabled:(!datum || datum===undefined) || name==='' }"> Submit </div> </div>
                 </div>
                 <!-- </form> -->
         </div>
@@ -205,7 +205,7 @@ import { enableEth, createJob, get } from '@/utils/commons'
           error:null,
           url: null,
           selector: null,
-          name: null,
+          name: '',
           eth: 1,
           account: null,
           repeat: true,

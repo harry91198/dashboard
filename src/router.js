@@ -33,11 +33,16 @@ export default new Router({
           name: 'query',
           component: () => import(/* webpackChunkName: "demo" */ './views/Query.vue')
         },
+        // {
+        //   path: '/custom',
+        //   name: 'custom',
+        //   component: () => import(/* webpackChunkName: "demo" */ './views/Custom.vue')
+        // },
         {
-          path: '/custom',
+          path: '/custom/:id?',
           name: 'custom',
           component: () => import(/* webpackChunkName: "demo" */ './views/Custom.vue')
-        },
+      },
         {
           path: '/faucet',
           name: 'faucet',

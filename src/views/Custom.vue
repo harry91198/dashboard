@@ -151,7 +151,7 @@ export default {
       ])
 
       let totalStake = stakers.message.reduce((acc, message) => acc + Number(message.weight), 0)
-      this.totalStake = Math.round(Number(totalStake/1e16))/100
+      this.totalStake = String(Math.round(Number(totalStake/1e16))/100)
 
       const _stakers = []
 
@@ -197,8 +197,12 @@ export default {
       await this.initTables(jobId)
     }
   },
-  mounted() {
-    this.getJobs()
+  async mounted() {
+    await this.getJobs()
+    if(this.$route.params.id) {
+        this.selected = this.$route.params.id
+        this.init(this.selected)
+    }
   }
 }
 </script>
