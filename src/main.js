@@ -23,22 +23,21 @@ import ArgonDashboard from './plugins/argon-dashboard'
 import axios from 'axios'
 import moment from 'moment'
 import VueAnalytics from 'vue-analytics'
-
-Vue.use(VueAnalytics, {
-  id: 'UA-143423314-1'
-})
+import VueAxios from 'vue-axios'
 import Jazzicon from 'vue-jazzicon'
 
-Vue.component('jazzicon', Jazzicon) // or Vue.component(Jazzicon.name, Jazzicon);
+Vue.use(VueAnalytics, {
+  router,
+  id: 'UA-143423314-1'
+})
+
+Vue.component('jazzicon', Jazzicon) // or Vue.component(Jazzicon.name, Jazzicon)
 // import Plugin from './plugins/Plugin'
 
 Vue.config.productionTip = false
 // Vue.use(Plugin)
 
 Vue.prototype.moment = moment
-import VueAxios from 'vue-axios'
-
-Vue.config.productionTip = false
 
 Vue.use(VueAxios, axios)
 
