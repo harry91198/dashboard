@@ -138,11 +138,11 @@
                     <h1>Add datafeed</h1>
 
                     <p class = "description"> <b>Note: Use ethereum compatible browser and set network to Görli. Make sure you have some ether to pay the transaction fees.</b></p>
-                <p class = "description">Example: Use the following URL to fetch price of US stocks from NASDAQ. Substitute AAPL with symbol of any stock.</p>
-                    <p class = "description">https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=E1BN9Y09VQ32BQ00</p>
-                    <p class = "description">Use selector: Global Quote["05. price"]</p>
+                <!-- <p class = "description">Example: Use the following URL to fetch price of US stocks from NASDAQ. Substitute AAPL with symbol of any stock.</p> -->
+                    <!-- <p class = "description">https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=E1BN9Y09VQ32BQ00</p> -->
+                    <!-- <p class = "description">Use selector: Global Quote["05. price"]</p> -->
+                    <p class = "description">Example: https://api.gemini.com/v1/pubticker/ltcusd, Selector: last, Name: LTC </p>
                     <p class = "description">Check "Explore custom queries" page after a few minutes to see the result.</p>
-                    <p class = "description">another example: https://api.gemini.com/v1/pubticker/ltcusd selector: last </p>
                     <br/>
 <div class="form-group">
                     <input  v-model = "url" placeholder="JSON URL" class="form-control" />
