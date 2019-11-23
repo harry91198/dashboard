@@ -28,7 +28,7 @@ import Jazzicon from 'vue-jazzicon'
 
 Vue.use(VueAnalytics, {
   router,
-  id: 'UA-143423314-1'
+  id: 'UA-143423314-5'
 })
 
 Vue.component('jazzicon', Jazzicon) // or Vue.component(Jazzicon.name, Jazzicon)
